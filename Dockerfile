@@ -25,5 +25,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # APIサーバーを起動
-# Railwayは自動的にPORT環境変数を設定します
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
